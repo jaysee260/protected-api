@@ -1,0 +1,7 @@
+{
+  "secret_key": "my_secret_key_can_be_anything_you_want",
+  "db": {
+    "uri": "mongodb://localhost:27017/",
+    "name": "name_of_your_db"
+  }
+}
