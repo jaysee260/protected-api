@@ -1,19 +1,20 @@
 {
   "name": "protected-api",
   "version": "1.0.0",
-  "description": "",
+  "description": "node-express API with JWT authentication",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon server"
   },
   "keywords": [],
-  "author": "",
+  "author": "Juan C. Gonzalez",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^2.0.1",
     "body-parser": "^1.18.2",
     "express": "^4.16.3",
     "jsonwebtoken": "^8.2.1",
-    "mongoose": "^5.0.17"
+    "mongoose": "^5.0.17",
+    "nodemon": "^1.17.4"
   }
 }
