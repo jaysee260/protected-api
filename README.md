@@ -1,4 +1,4 @@
-# protected-api
+# protected-api :closed_lock_with_key:
 
 A node-express API demonstrating how to use [JWTs][jwt] to authenticate users and protect routes.
 
