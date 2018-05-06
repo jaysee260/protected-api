@@ -10,7 +10,7 @@ A node-express API demonstrating how to use [JWTs][jwt] to authenticate users an
    - Will work with current values but not recommended!
 1. Start MongoDB locally
 1. `npm start`
-1. Open to `localhost:3000` in browser.
+1. Open `localhost:3000` in browser.
 
 
 
