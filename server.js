@@ -18,8 +18,11 @@
 
 
 // Dependencies
+const path          = require('path');
 const express       = require('express');
+const engines       = require('consolidate');
 const bodyParser    = require('body-parser');
+const logger        = require('morgan');
 
 const app           = express();
 
@@ -28,8 +31,16 @@ const db_keys = require('./config/').init().db;
 require('./db/mongoose')(db_keys);
 
 // Register Middleware
+app.use(logger('dev'));
+app.engine('html', engines.nunjucks);
+app.set('view engine', 'html');
+app.set('views', path.join(__dirname, 'views'));
+app.use(express.static(path.join(__dirname, 'public')));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }))
+
+app.use('/register', express.static('public'));
+
 
 /**
  * Routes Registration and Configuration
